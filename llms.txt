@@ -1,0 +1,57 @@
+# AdSpyLab
+
+> AdSpyLab is web2app competitor intelligence: what quiz-funnel brands advertise on
+> Meta and Google, how much and since when, which creatives they iterate, and what
+> their funnels look like screen by screen — down to the paywall prices. Built for
+> teams that run web-to-app subscription products (fitness, wellness, astrology,
+> language learning, education, AI tools) and for the agencies that serve them.
+
+Who it is for: growth and user-acquisition teams, creative strategists, founders and
+analysts of web2app products. You do not need to know a competitor by name: a
+category and a month are enough to start.
+
+What you can look at: monthly counts of new ads per brand, advertiser page, landing
+domain, funnel and language since 2025 (Meta) and Google Ads Transparency data by
+domain, country and creative type; the creative library — concept families, reuse,
+EU reach and rank movements, search by text or meaning; and the Funnels Library —
+saved walk-throughs of live quiz funnels (every screen, question, answer, pixels,
+payment provider, paywall plans and prices), re-walked over time so versions can be
+compared. Only publicly available advertising data is used.
+
+## Programmatic access (MCP)
+
+- MCP server: https://adspylab.com/mcp (Streamable HTTP, OAuth 2.1 + PKCE; static keys
+  for CLI clients from Settings → Agent access). Server card:
+  https://adspylab.com/.well-known/mcp/server-card.json — the live list of tools,
+  prompts and resources. Agent docs: https://adspylab.com/AGENTS.md
+- A subscription with MCP access is required (the All-inclusive plan includes MCP and
+  a monthly team credit allowance; one credit = one returned creative, one saved
+  funnel screen or one analytics row). There is no anonymous or self-registered
+  tier: the connector signs in with the account's web login.
+- Connect from Claude: Settings → Connectors → Add custom connector →
+  https://adspylab.com/mcp, then sign in. Claude Code:
+  `claude mcp add --transport http adspylab https://adspylab.com/mcp`, restart the
+  client, run /mcp to sign in. Cursor / Codex / VS Code: add a remote server of type
+  streamable-http with the same URL.
+- Start with the free `getting_started` tool (the capability guide) and the
+  `adspylab://categories` resource for exact category names. Report tools
+  (`competitor_report`, `category_report`, `funnel_report`) answer one job in one
+  call and end with `done`; single-purpose tools follow. Every list is one page.
+- A Claude Skill with playbooks per question: https://adspylab.com/mcp/skill.zip
+  (SKILL.md at https://adspylab.com/mcp/skill/SKILL.md).
+
+## Pages
+
+- [Home](https://adspylab.com/): what AdSpyLab covers and the plans.
+- [Pricing](https://adspylab.com/#pricing): Analytics, Ads Library, Funnels Library,
+  or All-inclusive with MCP.
+- [Reports](https://adspylab.com/reports/): published market reports.
+- [Niches](https://adspylab.com/niches/): category pages — who advertises in a niche
+  and how it moves month to month.
+- [Brands](https://adspylab.com/brands/): public brand cards.
+- [Guides](https://adspylab.com/guides/): how to read ad volume, creatives and funnels.
+- Russian versions under https://adspylab.com/ru/ (reports, niches, brands, guides).
+
+## Contact
+
+support@adspylab.com

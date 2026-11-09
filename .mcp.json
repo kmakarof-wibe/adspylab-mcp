@@ -1,0 +1,5 @@
+{
+  "mcpServers": {
+    "adspylab": { "type": "http", "url": "https://adspylab.com/mcp" }
+  }
+}

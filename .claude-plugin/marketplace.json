@@ -1,0 +1,8 @@
+{
+  "name": "adspylab-mcp",
+  "owner": { "name": "AdSpyLab", "email": "support@adspylab.com" },
+  "metadata": { "description": "AdSpyLab MCP connector and research skill for web2app competitor intelligence.", "version": "1.0.0" },
+  "plugins": [
+    { "name": "adspylab-mcp", "description": "The AdSpyLab MCP server (https://adspylab.com/mcp) and the ads-intelligence skill.", "source": "./" }
+  ]
+}

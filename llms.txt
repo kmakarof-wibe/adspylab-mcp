@@ -1,7 +1,7 @@
 # AdSpyLab
 
 > AdSpyLab is web2app competitor intelligence: what quiz-funnel brands advertise on
-> Meta and Google, how much and since when, which creatives they iterate, and what
+> Meta, Google and TikTok, how much and since when, which creatives they iterate, and what
 > their funnels look like screen by screen — down to the paywall prices. Built for
 > teams that run web-to-app subscription products (fitness, wellness, astrology,
 > language learning, education, AI tools) and for the agencies that serve them.

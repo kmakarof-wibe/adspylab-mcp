@@ -2,7 +2,7 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.kmakarof-wibe/adspylab",
   "title": "AdSpyLab",
-  "description": "Web2app competitor intelligence: Meta/Google ad activity, creatives, saved quiz funnels with prices.",
+  "description": "Web2app competitor intelligence: Meta/Google/TikTok ads, creatives, saved quiz funnels with prices.",
   "version": "1.0.0",
   "websiteUrl": "https://adspylab.com/?utm_source=mcp-registry&utm_medium=directory&utm_campaign=mcp-discovery",
   "icons": [

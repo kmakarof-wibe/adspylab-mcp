@@ -5,7 +5,7 @@
 
 **AdSpyLab is web2app competitor intelligence.** This repository is the public home of its MCP
 server: one URL, a sign-in with your AdSpyLab account, and your AI assistant works with the data
-directly — what quiz-funnel brands advertise on Meta and Google, how much and since when, which
+directly — what quiz-funnel brands advertise on Meta, Google and TikTok, how much and since when, which
 creatives they iterate, and what their funnels look like screen by screen down to the paywall
 prices.
 

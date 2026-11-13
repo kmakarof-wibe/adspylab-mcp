@@ -32,19 +32,19 @@ WHO is growing when the user names NO advertiser: the fastest-growing brands, Fa
 
 ## `brand_profile`
 
-The dedicated brand page in one call: source-specific monthly activity, growth, top20 plus Others drilldown, nested domain–funnel rankings, top pages and language sets, leading funnel URL and dashboard links. Meta or Google. Saved funnel screens are fetched separately with funnels_library_detail; advertising volume is not spend.
+The dedicated brand page in one call: source-specific monthly activity, growth, top20 plus Others drilldown, nested domain–funnel rankings, top pages and language sets, leading funnel URL and dashboard links. Meta, Google or TikTok (top_pages = TikTok advertisers there). Saved funnel screens are fetched separately with funnels_library_detail; advertising volume is not spend.
 
 ## `market_rankings`
 
-Overview / Monthly Stats ranking using the exact dashboard source and filters. Default six complete months: Total, each month, Last M % and Last 3M %. Sort the entire filtered dataset before pagination. Supports Meta and Google, lists of brands/categories/domains, URL text, Google country/type/legal entity, and a last-complete-month ad minimum. per: "brand" + brands: [...] answers the same question for up to 20 brands in ONE call (a separate table per brand, not_found listed) instead of one call per brand.
+Overview / Monthly Stats ranking using the exact dashboard source and filters. Default six complete months: Total, each month, Last M % and Last 3M %. Sort the entire filtered dataset before pagination. Supports Meta, Google and TikTok, lists of brands/categories/domains, URL text, Google country/type/legal entity, and a last-complete-month ad minimum. entity_type company (every source) = one row per company — the holding behind the landing domains, several legal names folded into one; a domain nobody names sits under an empty company. On Google it stands beside legal_name, the verified name of the advertiser. TikTok has the Meta dimensions, with page_name = the advertiser. per: "brand" + brands: [...] answers the same question for up to 20 brands in ONE call (a separate table per brand, not_found listed) instead of one call per brand.
 
 ## `research_filters`
 
-Discover exact filter values and counts for Meta/Google research. Returns only the matching bounded subset; use q to resolve a brand/category instead of guessing spellings. CHECK A LIST in one call: names: ["Calo", "FoodPilot", …] (up to 20, optionally sources: ["fb","google"]) answers found (exact catalogue value + count) / not_found (with near spellings) for every name — never one call per name. Source must match the subsequent research call. dimension topics / subtopics = place a free phrase in the creative-family topic catalogue (ranked by name, subtopics, definition and, when available, multilingual meaning; counts = labelled families) — the way to find a topic scope for ads_library_top / monthly_stats when you do not know its exact name; no match is reported as such. Free, with a daily allowance of lookups per account.
+Discover exact filter values and counts for Meta/Google/TikTok research. dimension companies = company names with their ad counts in the period, for the companies filter and the company breakdown. Returns only the matching bounded subset; use q to resolve a brand/category instead of guessing spellings. CHECK A LIST in one call: names: ["Calo", "FoodPilot", …] (up to 20, optionally sources: ["fb","google"]) answers found (exact catalogue value + count) / not_found (with near spellings) for every name — never one call per name. Source must match the subsequent research call. dimension topics / subtopics = place a free phrase in the creative-family topic catalogue (ranked by name, subtopics, definition and, when available, multilingual meaning; counts = labelled families) — the way to find a topic scope for ads_library_top / monthly_stats when you do not know its exact name; no match is reported as such. Free, with a daily allowance of lookups per account.
 
 ## `recent_updates`
 
-New catalog brands, funnels and Facebook pages from the last seven days, as on Overview. Source-scoped; Google returns brands only. These are additions to this database, not proof the businesses or campaigns launched that day.
+New catalog brands, funnels and Facebook pages from the last seven days, as on Overview. Source-scoped; Google returns brands only, TikTok brands and funnels. These are additions to this database, not proof the businesses or campaigns launched that day.
 
 ## `funnels_library_search`
 
@@ -80,7 +80,7 @@ The creative library: text search (words AND, "quoted" phrase, over ad texts + b
 
 ## `monthly_stats`
 
-Month-by-month pivot — the dashboard's Monthly Stats table: rows are brand | domain | category | funnel_name | page_name | language | url, each with per-month ads + visuals, window totals, 3-month growth and MoM; sort by total, last3m, mom, name or one month. Drill into a row by pinning it as a filter (brand="X" with entity_type="domain"; a language row via language_cell). url rows need brand, domain or funnel_name. source fb/google, exact dates or list filters; six complete months by default. TOPICS: entity_type topic | subtopic | format = what the market / a brand advertises by creative theme (e.g. tai chi, wall pilates, anxious attachment) or production format (UGC talking head, text hook over footage…); pin topic / subtopic / format to unfold it (entity_type="brand", topic="Tai chi" = who buys tai chi). Names from adspylab://topics.
+Month-by-month pivot — the dashboard's Monthly Stats table: rows are brand | domain | category | funnel_name | page_name | language | url, each with per-month ads + visuals, window totals, 3-month growth and MoM; sort by total, last3m, mom, name or one month. Drill into a row by pinning it as a filter (brand="X" with entity_type="domain"; a language row via language_cell). url rows need brand, domain or funnel_name. source fb/google/tiktok, exact dates or list filters; entity_type company = the holding behind the landing domains; six complete months by default. TOPICS: entity_type topic | subtopic | format = what the market / a brand advertises by creative theme (e.g. tai chi, wall pilates, anxious attachment) or production format (UGC talking head, text hook over footage…); pin topic / subtopic / format to unfold it (entity_type="brand", topic="Tai chi" = who buys tai chi). Names from adspylab://topics.
 
 ## `watchlist_snapshot`
 
@@ -129,4 +129,3 @@ Byte-identical creative files run by MORE THAN ONE brand — white-label operati
 ## `brand_report`
 
 One-call picture of one brand or domain: monthly ad + creative volume, the domains, funnels and Facebook pages it runs (Ad Library links), language mix, top landing pages, longest-running creatives with copy. Replaces brand_deep_dive + funnel_map + creative_teardown, cheaper than the three.
-

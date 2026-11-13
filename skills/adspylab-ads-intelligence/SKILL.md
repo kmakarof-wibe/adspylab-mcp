@@ -1,6 +1,6 @@
 ---
 name: adspylab-ads-intelligence
-description: "Research competitors using the connected AdSpyLab MCP: Meta and Google advertising activity, brand profiles, sortable monthly rankings, creative evidence and saved Funnels Library screens. Use for market, brand, ad or funnel research when this connector is available."
+description: "Research competitors using the connected AdSpyLab MCP: Meta, Google and TikTok advertising activity, brand profiles, sortable monthly rankings, creative evidence and saved Funnels Library screens. Use for market, brand, ad or funnel research when this connector is available."
 ---
 
 # AdSpyLab ads intelligence

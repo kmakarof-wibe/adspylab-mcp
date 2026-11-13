@@ -36,11 +36,11 @@ The dedicated brand page in one call: source-specific monthly activity, growth, 
 
 ## `market_rankings`
 
-Overview / Monthly Stats ranking using the exact dashboard source and filters. Default six complete months: Total, each month, Last M % and Last 3M %. Sort the entire filtered dataset before pagination. Supports Meta and Google, lists of brands/categories/domains, URL text, Google country/type/legal entity, and a last-complete-month ad minimum.
+Overview / Monthly Stats ranking using the exact dashboard source and filters. Default six complete months: Total, each month, Last M % and Last 3M %. Sort the entire filtered dataset before pagination. Supports Meta and Google, lists of brands/categories/domains, URL text, Google country/type/legal entity, and a last-complete-month ad minimum. per: "brand" + brands: [...] answers the same question for up to 20 brands in ONE call (a separate table per brand, not_found listed) instead of one call per brand.
 
 ## `research_filters`
 
-Discover exact filter values and counts for Meta/Google research. Returns only the matching bounded subset; use q to resolve a brand/category instead of guessing spellings. Source must match the subsequent research call. dimension topics / subtopics = place a free phrase in the creative-family topic catalogue (ranked by name, subtopics, definition and, when available, multilingual meaning; counts = labelled families) — the way to find a topic scope for ads_library_top / monthly_stats when you do not know its exact name; no match is reported as such.
+Discover exact filter values and counts for Meta/Google research. Returns only the matching bounded subset; use q to resolve a brand/category instead of guessing spellings. CHECK A LIST in one call: names: ["Calo", "FoodPilot", …] (up to 20, optionally sources: ["fb","google"]) answers found (exact catalogue value + count) / not_found (with near spellings) for every name — never one call per name. Source must match the subsequent research call. dimension topics / subtopics = place a free phrase in the creative-family topic catalogue (ranked by name, subtopics, definition and, when available, multilingual meaning; counts = labelled families) — the way to find a topic scope for ads_library_top / monthly_stats when you do not know its exact name; no match is reported as such. Free, with a daily allowance of lookups per account.
 
 ## `recent_updates`
 

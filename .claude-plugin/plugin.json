@@ -2,7 +2,7 @@
   "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
   "name": "adspylab-mcp",
   "displayName": "AdSpyLab MCP",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "AdSpyLab web2app competitor intelligence for Claude: the MCP connector plus the research skill (playbooks per question, the stop rule, report template).",
   "author": { "name": "AdSpyLab", "email": "support@adspylab.com", "url": "https://adspylab.com" },
   "homepage": "https://adspylab.com/?utm_source=claude-plugin&utm_medium=plugin&utm_campaign=mcp-discovery",

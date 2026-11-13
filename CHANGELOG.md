@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased — 2026-11-13
+## 1.1.0 — 2026-11-13
 
 List inputs: `research_filters` takes `names` (check up to 20 names in one call, `found` /
 `not_found`) and `sources`; `monthly_stats` and `market_rankings` take `per: "brand"` with

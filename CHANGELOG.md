@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased — 2026-11-16
+## 1.2.0 — 2026-11-16
 
 Plan the spend: `account_balance` (free) returns the credits left, the renewal date, today's free
 allowances and the typical cost of each tool — median and 90th percentile credits and the

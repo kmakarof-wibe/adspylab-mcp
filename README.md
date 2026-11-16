@@ -108,8 +108,13 @@ The live catalogue, with the exact description each tool sends to your client, i
 
 Usage is metered in credits from the team's monthly allowance: one credit is one returned
 creative, one saved funnel screen or one analytics row. Failed and empty answers cost nothing;
-`getting_started`, `suggest_capability` and the resources are free. Your assistant can always
-ask for the balance — the `usage` block of every answer carries it.
+`getting_started`, `account_balance`, `suggest_capability` and the resources are free.
+
+To plan a research before spending, ask for `account_balance`: credits left, the renewal date and
+the typical cost of each tool (median and 90th percentile credits, approximate answer size in
+tokens). To cap one call, pass `max_credits` to any paid tool: an answer above it is withheld,
+nothing is charged and you get its exact price; `max_credits: 0` is an estimate only. The `usage`
+block of every paid answer carries the charge and the balance after it.
 
 ---
 

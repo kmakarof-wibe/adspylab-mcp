@@ -1,5 +1,18 @@
 # Changelog
 
+## Unreleased — 2026-11-16
+
+Plan the spend: `account_balance` (free) returns the credits left, the renewal date, today's free
+allowances and the typical cost of each tool — median and 90th percentile credits and the
+approximate answer size in tokens, from real calls of the last 30 days. Every paid tool takes
+`max_credits`, a ceiling for that one call: an answer above it is withheld, nothing is charged and
+the exact price is returned (`status: "over_budget"`); `max_credits: 0` is an estimate only.
+Withheld answers are limited per account per day.
+
+A reminder when a list would do: after three calls in a row to `monthly_stats`, `market_rankings`,
+`ads_library_concept` or `research_filters` with only the brand, family or `q` changing, the answer
+carries `list_hint` — the single list call covering the values already sent. Same answer, same cost.
+
 ## 1.1.0 — 2026-11-13
 
 List inputs: `research_filters` takes `names` (check up to 20 names in one call, `found` /

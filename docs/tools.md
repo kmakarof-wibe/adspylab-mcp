@@ -2,9 +2,15 @@
 
 Every tool the AdSpyLab MCP server registers, with the description the server itself sends to a connected client. Free tools never use credits.
 
+Every paid tool also takes `max_credits` — an optional ceiling for that one call, in credits. If the answer would cost more, no data is returned, nothing is charged, and you get the exact price instead (`status: "over_budget"`, `estimate.credits`). `max_credits: 0` is an estimate only. Withheld answers are limited per account per day; `account_balance` shows how many are left.
+
 ## `getting_started` · free
 
 Read this FIRST. A human-readable guide to what AdSpyLab data you can ask for through your assistant, with example questions, how the row limit works, and tips. Free — does not use any quota.
+
+## `account_balance` · free
+
+Your credits and what calls cost — call it to PLAN a research before spending. Returns credits left this period and when they renew, today's free allowances, and the typical cost of each tool (median and 90th percentile credits, approximate answer size in tokens) from real calls of the last 30 days. For the exact price of one specific call, pass max_credits: 0 to that tool. Free — does not use any credits.
 
 ## `suggest_capability` · free
 
